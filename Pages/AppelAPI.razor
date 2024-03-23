@@ -21,7 +21,9 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        jsonData = await httpClient.GetStringAsync("https://pokeapi.co/api/v2/pokemon");
+        jsonData = await httpClient.GetStringAsync("https://pokeapi.co/api/v2/type/3");
+        
+        
     }
 
     private void NavigateToSerializePage()
